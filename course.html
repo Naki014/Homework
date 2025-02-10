@@ -32,11 +32,11 @@
         <div class="container marketing">
             <h1 class="text-center">รายละเอียดหลักสูตร</h1>
             <h1 class="text-center">------------------</h1>
-             
-            <h2>หลักสูตรระดับปริญญาตรี สาขาวิชาเทคโนโลยีมัลติมีเดีย</h2>
-            <p>หลักสูตรเทคโนโลยีบัณฑิต สาขาวิชาเทคโนโลยีมัลติมีเดีย</p>
-        
-            <h2>ชื่อหลักสูตร</h2>
+            <div class="row">
+                <div class="col-md-6">
+                  <h2>หลักสูตรระดับปริญญาตรี สาขาวิชาเทคโนโลยีมัลติมีเดีย</h2>
+                  <p>หลักสูตรเทคโนโลยีบัณฑิต สาขาวิชาเทคโนโลยีมัลติมีเดีย</p>
+                  <h2>ชื่อหลักสูตร</h2>
             <p><strong>ภาษาไทย:</strong> หลักสูตรเทคโนโลยีบัณฑิต สาขาวิชาเทคโนโลยีมัลติมีเดีย</p>
             <p><strong>ภาษาอังกฤษ:</strong> Bachelor of Technology Program in Multimedia Technology</p>
         
@@ -45,9 +45,98 @@
             <p><strong>ชื่อย่อ (ไทย):</strong> ทล.บ.(เทคโนโลยีมัลติมีเดีย)</p>
             <p><strong>ชื่อเต็ม (อังกฤษ):</strong> Bachelor of Technology (Multimedia Technology)</p>
             <p><strong>ชื่อย่อ (อังกฤษ):</strong> B.Tech. (Multimedia Technology)</p>
+            
+                </div>
+                <div class="col-md-6">
+                  <img src="สาวน้อย.jpg" class="img-fluid rounded" alt="สาวน้อย">
+                </div>
+              </div>
+        
+            
         </div>
         
     </div>
+
+    <section class="course-details">
+        <center><h2>รายละเอียดหลักสูตร</h2></center>
+        <div class="course-container">
+            <div class="course-image">
+                <img src="ไอ้หนุ่ม.jpg" alt="Course Image">
+            </div>
+            <div class="course-content">
+                <div class="course-item">
+                    <button class="toggle-details">ชื่อปริญญาและสาขาวิชา</button>
+                    <div class="course-info">
+                        <p><strong>ชื่อเต็ม (ไทย):</strong> เทคโนโลยีบัณฑิต (เทคโนโลยีมัลติมีเดีย)</p>
+                        <p><strong>ชื่อย่อ (ไทย):</strong> ทล.บ. (เทคโนโลยีมัลติมีเดีย)</p>
+                        <p><strong>ชื่อเต็ม (อังกฤษ):</strong> Bachelor of Technology (Multimedia Technology)</p>
+                        <p><strong>ชื่อย่อ (อังกฤษ):</strong> B.Tech. (Multimedia Technology)</p>
+                        
+                    </div>
+                    <div class="course-content">
+                        <div class="course-item">
+                            <button class="toggle-details">จำนวนหน่วยกิตรวมตลอดหลักสูตร</button>
+                            <div class="course-info">
+                                <p><strong>จำนวนหน่วยกิตรวมตลอดหลักสูตร   132 หน่วยกิต</p>
+                            </div>
+                            <div class="course-content">
+                                <div class="course-item">
+                                    <button class="toggle-details">โครงสร้างหลักสูตร</button>
+                                    <div class="course-info">
+                                            <p><strong>โครงสร้างหลักสูตร แบ่งเป็นหมวดวิชาที่สอดคล้องกับที่กำหนดไว้ในเกณฑ์มาตรฐาน หลักสูตร กระทรวงศึกษาธิการ ดังนี้</p>
+
+                                            <br><p><strong>ก. หมวดวิชาศึกษาทั่วไป 30 หน่วยกิต</p></br>
+
+                                            <p><strong>1. กลุ่มวิชาสังคมศาสตร์และมนุษยศาสตร์ 6 หน่วยกิต</p>
+                                            <p><strong>2. กลุ่มวิชาภาษา 13 หน่วยกิต</p>
+                                            <p><strong>3. กลุ่มวิชาวิทยาศาสตร์และคณิตศาสตร์ 11 หน่วยกิต</p>
+
+                                            <br><p><strong>ข. หมวดวิชาเฉพาะ 96 หน่วยกิต</p></br>
+                                            <p><strong>1. กลุ่มวิชาพื้นฐาน 30 หน่วยกิต</p>
+                                            <p><strong>2. กลุ่มวิชาเฉพาะด้าน 59 หน่วยกิต</p>
+                                            <p><strong>3. กลุ่มวิชาสร้างเสริมประสบการณ์วิชาชีพ 7 หน่วยกิต</p>
+
+                                                
+
+
+
+
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+                        
+                    
+                
+                
+        
+    </section>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelectorAll(".toggle-details").forEach(button => {
+            button.addEventListener("click", function() {
+                let info = this.nextElementSibling;
+                if (info.classList.contains("show")) {
+                    info.classList.remove("show");
+                    info.style.maxHeight = null;
+                } else {
+                    document.querySelectorAll(".course-info").forEach(el => {
+                        el.classList.remove("show");
+                        el.style.maxHeight = null;
+                    });
+                    info.classList.add("show");
+                    info.style.maxHeight = info.scrollHeight + "px";
+                }
+            });
+        });
+    });
+</script>
+
+    
+    
+        
+    
 
 
         <script>
